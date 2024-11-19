@@ -2,8 +2,8 @@ import React from 'react';
 
 function Card({ data }) {
     return (
-        <div className="flex items-center justify-between w-full m-3">
-            <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <div className="items-center justify-between w-full m-3 mdflex ">
+            <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ">
                 <a href="#">
                     <img className="rounded-t-lg" src={data.image} alt={data.title} />
                 </a>

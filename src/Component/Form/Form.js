@@ -42,19 +42,23 @@ function Form() {
   };
 
   return (
-    <div className="m-6 mt-4 mb-20 bg-white">
+    <div className="mt-4 mb-20 dark:bg-gray-900">
       <form onSubmit={handleSubmit} className="max-w-md pt-4 pb-4 mx-auto">
+      
         <div className="relative z-0 w-full mb-10 mt-11 group">
+          
+            
+          
           <input
             type="email"
             name="email"
             value={formData.email}
             onChange={handleChange}
-            className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2"
+            className="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2"
             placeholder=" "
             required
           />
-          <label htmlFor="email">Email address</label>
+          <label htmlFor="email" className='text-white'>Email address</label>
         </div>
         <div className="relative z-0 w-full mb-5 group">
           <input
@@ -62,12 +66,13 @@ function Form() {
             name="password"
             value={formData.password}
             onChange={handleChange}
-            className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2"
+            className="block py-2.5 px-0 w-full text-sm text-gray-200 bg-transparent border-0 border-b-2"
             placeholder=" "
             required
           />
-          <label htmlFor="password">Password</label>
+          <label htmlFor="password" className='text-white'>Password</label>
         </div>
+        
         <div className="relative z-0 w-full mb-5 group">
           <input
             type="password"
@@ -78,7 +83,7 @@ function Form() {
             placeholder=" "
             required
           />
-          <label htmlFor="confirmPassword">Confirm password</label>
+          <label htmlFor="confirmPassword" className='text-white'>Confirm password</label>
         </div>
         <div className="grid md:grid-cols-2 md:gap-6">
           <div className="relative z-0 w-full mb-5 group">
@@ -91,7 +96,7 @@ function Form() {
               placeholder=" "
               required
             />
-            <label htmlFor="firstName">First name</label>
+            <label htmlFor="firstName" className='text-white'>First name</label>
           </div>
           <div className="relative z-0 w-full mb-5 group">
             <input
@@ -103,7 +108,7 @@ function Form() {
               placeholder=" "
               required
             />
-            <label htmlFor="lastName">Last name</label>
+            <label htmlFor="lastName" className='text-white'>Last name</label>
           </div>
         </div>
         <div className="grid md:grid-cols-2 md:gap-6">
@@ -118,7 +123,7 @@ function Form() {
               placeholder=" "
               required
             />
-            <label htmlFor="phone">Phone number (123-456-7890)</label>
+            <label htmlFor="phone" className='text-white'>Phone number (123-456-7890)</label>
           </div>
           <div className="relative z-0 w-full mb-5 group">
             <input
@@ -130,7 +135,7 @@ function Form() {
               placeholder=" "
               required
             />
-            <label htmlFor="company">Company (Ex. Google)</label>
+            <label htmlFor="company" className='text-white'>Company (Ex. Google)</label>
           </div>
         </div>
         <button type="submit" className="text-white bg-blue-700 hover:bg-blue-800 px-5 py-2.5">

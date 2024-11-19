@@ -10,8 +10,8 @@ function Team() {
     ]);
 
     return (
-        <div className='flex justify-center m-6 mt-5 mb-5 bg-black rounded-lg'>
-            <div className="grid grid-cols-1 gap-4 mt-5 mb-5 sm:grid-cols-2 lg:grid-cols-3">
+        <div className='flex justify-center mt-5 mb-5 dark:bg-gray-500 '>
+            <div className="grid grid-cols-1 gap-4 mt-5 mb-5 sm:grid-cols-2 lg:grid-cols-3 ">
                 {data.map((detail, index) => (
                     <Card key={index} data={detail} />
                 ))}
