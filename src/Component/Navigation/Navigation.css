@@ -1,0 +1,16 @@
+/* Optional styling for link hover effect */
+a {
+    transition: color 0.3s, border-color 0.3s;
+  }
+  
+  a:hover {
+    color: #0beb0b;
+    text-decoration: underline;
+    text-underline-offset: 22px;
+  }
+  
+  /* Optional styling for icons */
+  .anticon {
+    font-size: 1.25rem;
+  }
+  
