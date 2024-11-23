@@ -11,16 +11,18 @@ import Team from './Component/Team/Team';
 import AddDetails from './Component/AddDetails/AddDetails';
 import LoginPage from './Page/Loginpage';
 import Home from './Page/Home/Home';
+import Gallery from './Page/Gallery/Gallery';
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-      <Route path='/' element={<Home/>}/>
-        <Route path='/' element={<AddDetails/>}/>
+      <Route path='/' element={<Gallery/>}/>
+      {/* <Route path='/Home' element={<Home/>}/>
+        {/* <Route path='/' element={<AddDetails/>}/> */}
         <Route path='/Login' element={<LoginPage/>}/>
         <Route path='/Home' element={<Background/>}/>
-      </Routes>
+      </Routes> */}
     </BrowserRouter>
   );
 }
